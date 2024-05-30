@@ -98,7 +98,7 @@ NODE poly_sum(NODE head1, NODE head2, NODE head3)
       while(1){
         if(a->xexp == b->xexp && a->yexp == b->yexp && a->zexp == b->zexp)
        {
-            coef = a->coef + b->coef;
+coef = a->coef + b->coef;
             head3 = attach(coef, a->xexp, a->yexp, a->zexp, head3);
             a = a->link;
             b = b->link;
@@ -237,6 +237,7 @@ void main()
                 display(head3);
                 break;
         case 3: exit(0);
-      }
-    }
+      }
+    }
 }
+
